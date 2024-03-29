@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Pricing Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Sono", sans-serif;
+      }
+      * {
+        align-self: center;
+        flex: 1;
+      }
+
+      .pricing-container {
+        align-content: center;
+        justify-content: space-between;
+        padding: 10px;
+        flex-direction: row;
+      }
+
+      .pricing-plan {
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        align-content: center;
+        background-color: grey;
+        border-radius: 10%;
+        width: 400px;
+        height: 400px;
+        border: 10px solid white
+      }
+      .pricing-plan > .plan-features {
+        display: flex;
+        align-content: center;
+      }
+
+      li {
+        justify-content: center;
+        align-items: center;
+      }
+
+      .plan-button {
+        background-color: orange;
+      }
+
+      @media (min-width: 1000px) {
+        .pricing-plan {
+        flex-direction: column;
+        background-color: grey
+        }
+      }
+
+      #hi {
+        align-items: flex-end;
+        justify-content: flex-end;
+      }
+    
+    </style>
+    <script>
+      function cheap()
+      {
+        let hi_var = document.getElementById("hi");
+        hi_var.textContent = "Oh ok you bought the cheap option."
+      }
+
+      function medium()
+      {
+        let hi_var = document.getElementById("hi");
+        hi_var.textContent = "Oh ok you bought the medium option."
+      }
+
+      function expensive()
+      {
+        let hi_var = document.getElementById("hi");
+        hi_var.textContent = "Oh ok you bought the expensive option!"
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="pricing-container">
+      <div class="pricing-plan">
+        <div class="plan-title">Basic</div>
+        <div class="plan-price">$9.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 10GB Storage</li>
+          <li>✅ 1 User</li>
+          <li>🚫 Support</li>
+        </ul>
+        <button class="plan-button" onclick="cheap()">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Standard</div>
+        <div class="plan-price">$19.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 50GB Storage</li>
+          <li>✅ 5 Users</li>
+          <li>✅ Phone &amp; Email Support</li>
+        </ul>
+        <button class="plan-button" onclick="medium()">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Premium</div>
+        <div class="plan-price">$49.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 100GB Storage</li>
+          <li>✅ 10 Users</li>
+          <li>✅ 24/7 Support</li>
+        </ul>
+        <button class="plan-button" onclick="expensive()">Sign Up</button>
+      </div>
+    </div>
+    <h3 id="hi"> </h3>
+  </body>
+</html>
