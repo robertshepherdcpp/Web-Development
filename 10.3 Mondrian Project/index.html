@@ -19,11 +19,87 @@
     HINT: Remember you can't change the properties of grid lines.
     But grid lines are transparent!
     */
+
+    .container {
+      display: grid;
+      grid-template-columns: 320px 361px 320px;
+      grid-template-rows: 414px 285px 100px;
+      gap: 9px;
+      background-color: black;
+      width: 748px;
+      height: 748px;
+    }
+
+    .red {
+      display: grid;
+      background-color: red;
+    }
+
+    .white-first {
+      display: grid;
+      grid-column: span 2.3375;
+      background-color: white;
+    }
+
+    .white-second {
+      display: grid;
+      background-color: white;
+    }
+
+    .white-third {
+      display: grid;
+      background-color: white;
+    }
+
+    .blue {
+      display: grid;
+      grid-column: span 0.15625;
+      grid-row: 130px;
+      background-color: blue;
+    }
+
+    .white-fourth {
+      display: grid;
+      grid-row: 175px;
+      grid-column: 130px;
+      background-color: white;
+    }
+
+    .white-fifth {
+      display: grid;
+      background-color: white;
+    }
+
+    .yellow {
+      display: grid;
+      grid-row: 198px;
+      grid-column: 20px;
+      background-color: yellow;
+    }
+
+    .grey {
+      display: grid;
+      grid-row: 153px;
+      grid-column: 20px;
+      background-color: grey;
+    }
+
   </style>
 </head>
 
 <body>
   <!-- Write your HTML here -->
+  <div class="container">
+    <div class="red element"></div>
+    <div class="white-first element"></div>
+    <div class="white-second element"></div>
+    <div class="white-third element"></div>
+    <div class="blue element"></div>
+    <div class="white-fourth element"></div>
+    <div class="white-fifth element"></div>
+    <div class="yellow element"></div>
+    <div class="grey element"></div>
+  </div>
 </body>
 
 </html>
