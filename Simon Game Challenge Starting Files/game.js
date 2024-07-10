@@ -77,8 +77,8 @@ $("body").keypress(function(){
     if(!keyPressed)
     {
         nextSequence();
-        keyPressed = true;
         $("h1").text("Level " + String(level));
+        keyPressed = true;
     }
     alert("Bye");
 });
