@@ -1,3 +1,9 @@
 body {
     background-color: lightblue;
 }
+
+h1 {
+    display: flex;
+    justify-self: center;
+    color: orangered
+}

@@ -1,3 +1,3 @@
-$("body").keypress(function(event){
-    $("h1").text(event.key);
+$("button").on("click", function(event){
+    $("h1").toggle();
 });
